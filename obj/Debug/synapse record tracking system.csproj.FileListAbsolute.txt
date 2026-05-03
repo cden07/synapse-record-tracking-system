@@ -1,0 +1,66 @@
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system\bin\Debug\synapse record tracking system.exe.config
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system\bin\Debug\synapse record tracking system.exe
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system\bin\Debug\synapse record tracking system.pdb
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system\obj\Debug\synapse record tracking system.csproj.AssemblyReference.cache
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system\obj\Debug\synapse_record_tracking_system.Form1.resources
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system\obj\Debug\synapse_record_tracking_system.Form2.resources
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system\obj\Debug\synapse_record_tracking_system.Properties.Resources.resources
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system\obj\Debug\synapse record tracking system.csproj.GenerateResource.cache
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system\obj\Debug\synapse record tracking system.csproj.CoreCompileInputs.cache
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system\obj\Debug\synapse record tracking system.exe
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system\obj\Debug\synapse record tracking system.pdb
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system\obj\Debug\synapse_record_tracking_system.DashboardControl.resources
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system\obj\Debug\synapse_record_tracking_system.GradesControl.resources
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system\obj\Debug\synapse_record_tracking_system.PerformanceControl.resources
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system\obj\Debug\synapse_record_tracking_system.StudentNavControl.resources
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system\obj\Debug\synapse_record_tracking_system.AdminNavControl.resources
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system\obj\Debug\synapse_record_tracking_system.StudentRecordControl.resources
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system\obj\Debug\synapse_record_tracking_system.GradeManagementControl.resources
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system\obj\Debug\synapse_record_tracking_system.EditStudentControl.resources
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system\obj\Debug\synapse_record_tracking_system.AddStudentControl.resources
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system\obj\Debug\synapse_record_tracking_system.DeleteStudentControl.resources
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system\obj\Debug\synapse_record_tracking_system.StudentListControl.resources
+C:\Users\alexz\Downloads\synapse record tracking system\bin\Debug\synapse record tracking system.exe.config
+C:\Users\alexz\Downloads\synapse record tracking system\bin\Debug\synapse record tracking system.exe
+C:\Users\alexz\Downloads\synapse record tracking system\bin\Debug\synapse record tracking system.pdb
+C:\Users\alexz\Downloads\synapse record tracking system\obj\Debug\synapse record tracking system.csproj.AssemblyReference.cache
+C:\Users\alexz\Downloads\synapse record tracking system\obj\Debug\synapse_record_tracking_system.DashboardControl.resources
+C:\Users\alexz\Downloads\synapse record tracking system\obj\Debug\synapse_record_tracking_system.EditStudentControl.resources
+C:\Users\alexz\Downloads\synapse record tracking system\obj\Debug\synapse_record_tracking_system.Form1.resources
+C:\Users\alexz\Downloads\synapse record tracking system\obj\Debug\synapse_record_tracking_system.Form2.resources
+C:\Users\alexz\Downloads\synapse record tracking system\obj\Debug\synapse_record_tracking_system.GradeManagementControl.resources
+C:\Users\alexz\Downloads\synapse record tracking system\obj\Debug\synapse_record_tracking_system.GradesControl.resources
+C:\Users\alexz\Downloads\synapse record tracking system\obj\Debug\synapse_record_tracking_system.PerformanceControl.resources
+C:\Users\alexz\Downloads\synapse record tracking system\obj\Debug\synapse_record_tracking_system.Properties.Resources.resources
+C:\Users\alexz\Downloads\synapse record tracking system\obj\Debug\synapse_record_tracking_system.StudentListControl.resources
+C:\Users\alexz\Downloads\synapse record tracking system\obj\Debug\synapse_record_tracking_system.StudentNavControl.resources
+C:\Users\alexz\Downloads\synapse record tracking system\obj\Debug\synapse_record_tracking_system.AdminNavControl.resources
+C:\Users\alexz\Downloads\synapse record tracking system\obj\Debug\synapse_record_tracking_system.StudentRecordControl.resources
+C:\Users\alexz\Downloads\synapse record tracking system\obj\Debug\synapse_record_tracking_system.AddStudentControl.resources
+C:\Users\alexz\Downloads\synapse record tracking system\obj\Debug\synapse_record_tracking_system.DeleteStudentControl.resources
+C:\Users\alexz\Downloads\synapse record tracking system\obj\Debug\synapse record tracking system.csproj.GenerateResource.cache
+C:\Users\alexz\Downloads\synapse record tracking system\obj\Debug\synapse record tracking system.csproj.CoreCompileInputs.cache
+C:\Users\alexz\Downloads\synapse record tracking system\obj\Debug\synapse record tracking system.exe
+C:\Users\alexz\Downloads\synapse record tracking system\obj\Debug\synapse record tracking system.pdb
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system -khem\bin\Debug\synapse record tracking system.exe.config
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system -khem\bin\Debug\synapse record tracking system.exe
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system -khem\bin\Debug\synapse record tracking system.pdb
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system -khem\obj\Debug\synapse record tracking system.csproj.AssemblyReference.cache
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system -khem\obj\Debug\synapse_record_tracking_system.DashboardControl.resources
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system -khem\obj\Debug\synapse_record_tracking_system.EditStudentControl.resources
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system -khem\obj\Debug\synapse_record_tracking_system.Form1.resources
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system -khem\obj\Debug\synapse_record_tracking_system.Form2.resources
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system -khem\obj\Debug\synapse_record_tracking_system.GradeManagementControl.resources
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system -khem\obj\Debug\synapse_record_tracking_system.GradesControl.resources
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system -khem\obj\Debug\synapse_record_tracking_system.PerformanceControl.resources
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system -khem\obj\Debug\synapse_record_tracking_system.Properties.Resources.resources
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system -khem\obj\Debug\synapse_record_tracking_system.StudentListControl.resources
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system -khem\obj\Debug\synapse_record_tracking_system.StudentNavControl.resources
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system -khem\obj\Debug\synapse_record_tracking_system.AdminNavControl.resources
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system -khem\obj\Debug\synapse_record_tracking_system.StudentRecordControl.resources
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system -khem\obj\Debug\synapse_record_tracking_system.AddStudentControl.resources
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system -khem\obj\Debug\synapse_record_tracking_system.DeleteStudentControl.resources
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system -khem\obj\Debug\synapse record tracking system.csproj.GenerateResource.cache
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system -khem\obj\Debug\synapse record tracking system.csproj.CoreCompileInputs.cache
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system -khem\obj\Debug\synapse record tracking system.exe
+C:\Users\carla\OneDrive\Documents\C#\synapse record tracking system -khem\obj\Debug\synapse record tracking system.pdb

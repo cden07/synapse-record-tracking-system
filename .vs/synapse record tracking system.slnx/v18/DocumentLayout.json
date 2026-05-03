@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\carla\\OneDrive\\Documents\\C#\\synapse record tracking system -khem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0D38BF52-D56E-483C-A0CB-FBB8D058CBB9}|synapse record tracking system.csproj|c:\\users\\carla\\onedrive\\documents\\c#\\synapse record tracking system -khem\\grademanagementcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D38BF52-D56E-483C-A0CB-FBB8D058CBB9}|synapse record tracking system.csproj|solutionrelative:grademanagementcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D38BF52-D56E-483C-A0CB-FBB8D058CBB9}|synapse record tracking system.csproj|C:\\Users\\carla\\OneDrive\\Documents\\C#\\synapse record tracking system -khem\\grademanagementcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0D38BF52-D56E-483C-A0CB-FBB8D058CBB9}|synapse record tracking system.csproj|solutionrelative:grademanagementcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D38BF52-D56E-483C-A0CB-FBB8D058CBB9}|synapse record tracking system.csproj|C:\\Users\\carla\\OneDrive\\Documents\\C#\\synapse record tracking system -khem\\editstudentcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0D38BF52-D56E-483C-A0CB-FBB8D058CBB9}|synapse record tracking system.csproj|solutionrelative:editstudentcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D38BF52-D56E-483C-A0CB-FBB8D058CBB9}|synapse record tracking system.csproj|c:\\users\\carla\\onedrive\\documents\\c#\\synapse record tracking system -khem\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0D38BF52-D56E-483C-A0CB-FBB8D058CBB9}|synapse record tracking system.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D38BF52-D56E-483C-A0CB-FBB8D058CBB9}|synapse record tracking system.csproj|c:\\users\\carla\\onedrive\\documents\\c#\\synapse record tracking system -khem\\studentlistcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0D38BF52-D56E-483C-A0CB-FBB8D058CBB9}|synapse record tracking system.csproj|solutionrelative:studentlistcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form2.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\carla\\OneDrive\\Documents\\C#\\synapse record tracking system -khem\\Form2.cs",
+              "RelativeDocumentMoniker": "Form2.cs",
+              "ToolTip": "C:\\Users\\carla\\OneDrive\\Documents\\C#\\synapse record tracking system -khem\\Form2.cs [Design]",
+              "RelativeToolTip": "Form2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T01:05:46.29Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GradeManagementControl.cs",
+              "DocumentMoniker": "C:\\Users\\carla\\OneDrive\\Documents\\C#\\synapse record tracking system -khem\\GradeManagementControl.cs",
+              "RelativeDocumentMoniker": "GradeManagementControl.cs",
+              "ToolTip": "C:\\Users\\carla\\OneDrive\\Documents\\C#\\synapse record tracking system -khem\\GradeManagementControl.cs",
+              "RelativeToolTip": "GradeManagementControl.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAkwHoAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T05:44:22.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GradeManagementControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\carla\\OneDrive\\Documents\\C#\\synapse record tracking system -khem\\GradeManagementControl.cs",
+              "RelativeDocumentMoniker": "GradeManagementControl.cs",
+              "ToolTip": "C:\\Users\\carla\\OneDrive\\Documents\\C#\\synapse record tracking system -khem\\GradeManagementControl.cs [Design]",
+              "RelativeToolTip": "GradeManagementControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T05:40:45.95Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EditStudentControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\carla\\OneDrive\\Documents\\C#\\synapse record tracking system -khem\\EditStudentControl.cs",
+              "RelativeDocumentMoniker": "EditStudentControl.cs",
+              "ToolTip": "C:\\Users\\carla\\OneDrive\\Documents\\C#\\synapse record tracking system -khem\\EditStudentControl.cs [Design]",
+              "RelativeToolTip": "EditStudentControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T05:55:50.252Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StudentListControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\carla\\OneDrive\\Documents\\C#\\synapse record tracking system -khem\\StudentListControl.cs",
+              "RelativeDocumentMoniker": "StudentListControl.cs",
+              "ToolTip": "C:\\Users\\carla\\OneDrive\\Documents\\C#\\synapse record tracking system -khem\\StudentListControl.cs [Design]",
+              "RelativeToolTip": "StudentListControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T02:52:05.261Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

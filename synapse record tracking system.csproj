@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0D38BF52-D56E-483C-A0CB-FBB8D058CBB9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>synapse_record_tracking_system</RootNamespace>
+    <AssemblyName>synapse record tracking system</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditStudentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditStudentControl.Designer.cs">
+      <DependentUpon>EditStudentControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GradeManagementControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GradeManagementControl.Designer.cs">
+      <DependentUpon>GradeManagementControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DashboardControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashboardControl.Designer.cs">
+      <DependentUpon>DashboardControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GradesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GradesControl.Designer.cs">
+      <DependentUpon>GradesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerformanceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PerformanceControl.Designer.cs">
+      <DependentUpon>PerformanceControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student.cs" />
+    <Compile Include="StudentListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentListControl.Designer.cs">
+      <DependentUpon>StudentListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentNavControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentNavControl.Designer.cs">
+      <DependentUpon>StudentNavControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminNavControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminNavControl.Designer.cs">
+      <DependentUpon>AdminNavControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRecordControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRecordControl.Designer.cs">
+      <DependentUpon>StudentRecordControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStudentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddStudentControl.Designer.cs">
+      <DependentUpon>AddStudentControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteStudentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeleteStudentControl.Designer.cs">
+      <DependentUpon>DeleteStudentControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRepository.cs" />
+    <EmbeddedResource Include="DashboardControl.resx">
+      <DependentUpon>DashboardControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditStudentControl.resx">
+      <DependentUpon>EditStudentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GradeManagementControl.resx">
+      <DependentUpon>GradeManagementControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GradesControl.resx">
+      <DependentUpon>GradesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerformanceControl.resx">
+      <DependentUpon>PerformanceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StudentListControl.resx">
+      <DependentUpon>StudentListControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentNavControl.resx">
+      <DependentUpon>StudentNavControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminNavControl.resx">
+      <DependentUpon>AdminNavControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRecordControl.resx">
+      <DependentUpon>StudentRecordControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStudentControl.resx">
+      <DependentUpon>AddStudentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteStudentControl.resx">
+      <DependentUpon>DeleteStudentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SYNAPSE LOGO.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace synapse_record_tracking_system
+{
+    public class Student
+    {
+        public int StudentID { get; set; }
+        public string Username { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string YearLevel { get; set; }
+        public DateTime Birthday { get; set; }
+        public string Block { get; set; }
+        public string ContactNumber { get; set; }
+        public string ProgramCourse { get; set; }
+    }
+}
