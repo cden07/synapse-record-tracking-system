@@ -19,7 +19,8 @@ namespace synapse_record_tracking_system
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-           
+            if (!ValidateLogin()) return;
+
             string username = txtUsername.Text.Trim();
             string password = txtPassword.Text.Trim();
 
