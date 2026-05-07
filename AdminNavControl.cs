@@ -31,6 +31,23 @@ namespace synapse_record_tracking_system
         {
             ((Form2)this.ParentForm).LoadControl(new StudentListControl());
         }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to log out?",
+                                         "Logout",
+                                         MessageBoxButtons.YesNo,
+                                         MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Form2 parentForm = (Form2)this.ParentForm;
+                parentForm.Hide();
+
+                Form1 loginForm = new Form1();
+                loginForm.Show();
+            }
+        }
     }
 }
 

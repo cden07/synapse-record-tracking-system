@@ -31,11 +31,20 @@ namespace synapse_record_tracking_system
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
             if (UserRole == "Admin")
+            {
                 splitContainer1.Panel1.Controls.Add(new AdminNavControl());
+            }
             else
-                splitContainer1.Panel1.Controls.Add(new StudentNavControl());
+            {
+                string studentId = this.Tag?.ToString(); // studentId stored in Tag at login
+                splitContainer1.Panel1.Controls.Add(new StudentNavControl(studentId));
+            }
+        }
+
+        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 

@@ -125,7 +125,7 @@
             this.lblGradeManagement.ForeColor = System.Drawing.Color.Goldenrod;
             this.lblGradeManagement.Location = new System.Drawing.Point(403, 15);
             this.lblGradeManagement.Name = "lblGradeManagement";
-            this.lblGradeManagement.Size = new System.Drawing.Size(401, 49);
+            this.lblGradeManagement.Size = new System.Drawing.Size(389, 48);
             this.lblGradeManagement.TabIndex = 0;
             this.lblGradeManagement.Text = "GRADE MANAGEMENT";
             // 
@@ -297,6 +297,7 @@
             this.btnRecompute.TabIndex = 75;
             this.btnRecompute.Text = "RECOMPLETE";
             this.btnRecompute.UseVisualStyleBackColor = false;
+            this.btnRecompute.Click += new System.EventHandler(this.btnRecompute_Click);
             // 
             // btnClear
             // 
@@ -308,6 +309,7 @@
             this.btnClear.TabIndex = 74;
             this.btnClear.Text = "CLEAR GRADES";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnSave
             // 
@@ -319,6 +321,7 @@
             this.btnSave.TabIndex = 73;
             this.btnSave.Text = "SAVE CHANGES";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // label19
             // 
@@ -430,6 +433,7 @@
             this.txtMLabGrade.Size = new System.Drawing.Size(214, 28);
             this.txtMLabGrade.TabIndex = 67;
             this.txtMLabGrade.TextChanged += new System.EventHandler(this.txtMLabGrade_TextChanged);
+            this.txtMLabGrade.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMLabGrade_KeyPress);
             // 
             // label20
             // 
@@ -495,6 +499,7 @@
             this.txtMQ4.Size = new System.Drawing.Size(69, 28);
             this.txtMQ4.TabIndex = 60;
             this.txtMQ4.TextChanged += new System.EventHandler(this.txtMQ4_TextChanged);
+            this.txtMQ4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMQ4_KeyPress);
             // 
             // txtMQ3
             // 
@@ -504,6 +509,7 @@
             this.txtMQ3.Size = new System.Drawing.Size(69, 28);
             this.txtMQ3.TabIndex = 59;
             this.txtMQ3.TextChanged += new System.EventHandler(this.txtMQ3_TextChanged);
+            this.txtMQ3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMQ3_KeyPress);
             // 
             // txtME
             // 
@@ -513,6 +519,7 @@
             this.txtME.Size = new System.Drawing.Size(69, 28);
             this.txtME.TabIndex = 58;
             this.txtME.TextChanged += new System.EventHandler(this.txtME_TextChanged);
+            this.txtME.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtME_KeyPress);
             // 
             // txtMQ1Ave
             // 
@@ -531,6 +538,7 @@
             this.txtMQ2.Size = new System.Drawing.Size(69, 28);
             this.txtMQ2.TabIndex = 56;
             this.txtMQ2.TextChanged += new System.EventHandler(this.txtMQ2_TextChanged);
+            this.txtMQ2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMQ2_KeyPress);
             // 
             // cboMItemsQ1
             // 
@@ -640,6 +648,7 @@
             this.txtMQ1.Size = new System.Drawing.Size(69, 28);
             this.txtMQ1.TabIndex = 51;
             this.txtMQ1.TextChanged += new System.EventHandler(this.txtMQ1_TextChanged);
+            this.txtMQ1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMQ1_KeyPress);
             // 
             // label22
             // 
@@ -719,6 +728,7 @@
             this.txtMA.Size = new System.Drawing.Size(258, 28);
             this.txtMA.TabIndex = 44;
             this.txtMA.TextChanged += new System.EventHandler(this.txtMA_TextChanged);
+            this.txtMA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMA_KeyPress);
             // 
             // txtMCP
             // 
@@ -728,6 +738,7 @@
             this.txtMCP.Size = new System.Drawing.Size(258, 28);
             this.txtMCP.TabIndex = 41;
             this.txtMCP.TextChanged += new System.EventHandler(this.txtMCP_TextChanged);
+            this.txtMCP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMCP_KeyPress);
             // 
             // finalGradingTab
             // 
@@ -786,6 +797,7 @@
             this.txtFQ1.Size = new System.Drawing.Size(74, 28);
             this.txtFQ1.TabIndex = 71;
             this.txtFQ1.TextChanged += new System.EventHandler(this.txtFQ1_TextChanged);
+            this.txtFQ1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFQ1_KeyPress);
             // 
             // linkLabel2
             // 
@@ -805,6 +817,7 @@
             this.txtFLabGrade.Size = new System.Drawing.Size(215, 28);
             this.txtFLabGrade.TabIndex = 39;
             this.txtFLabGrade.TextChanged += new System.EventHandler(this.txtFLabGrade_TextChanged);
+            this.txtFLabGrade.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFLabGrade_KeyPress);
             // 
             // label16
             // 
@@ -866,6 +879,7 @@
             this.txtFQ4.Size = new System.Drawing.Size(74, 28);
             this.txtFQ4.TabIndex = 32;
             this.txtFQ4.TextChanged += new System.EventHandler(this.txtFQ4_TextChanged);
+            this.txtFQ4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFQ4_KeyPress);
             // 
             // txtFQ3
             // 
@@ -875,6 +889,7 @@
             this.txtFQ3.Size = new System.Drawing.Size(74, 28);
             this.txtFQ3.TabIndex = 31;
             this.txtFQ3.TextChanged += new System.EventHandler(this.txtFQ3_TextChanged);
+            this.txtFQ3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFQ3_KeyPress);
             // 
             // txtFE
             // 
@@ -884,6 +899,7 @@
             this.txtFE.Size = new System.Drawing.Size(74, 28);
             this.txtFE.TabIndex = 30;
             this.txtFE.TextChanged += new System.EventHandler(this.txtFE_TextChanged);
+            this.txtFE.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFE_KeyPress);
             // 
             // txtFQ1Ave
             // 
@@ -901,6 +917,7 @@
             this.txtFQ2.Size = new System.Drawing.Size(74, 28);
             this.txtFQ2.TabIndex = 28;
             this.txtFQ2.TextChanged += new System.EventHandler(this.txtFQ2_TextChanged);
+            this.txtFQ2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFQ2_KeyPress);
             // 
             // cboFItemsQ1
             // 
@@ -1080,6 +1097,7 @@
             this.txtFA.Size = new System.Drawing.Size(271, 28);
             this.txtFA.TabIndex = 16;
             this.txtFA.TextChanged += new System.EventHandler(this.txtFA_TextChanged);
+            this.txtFA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFA_KeyPress);
             // 
             // txtFCP
             // 
@@ -1089,6 +1107,7 @@
             this.txtFCP.Size = new System.Drawing.Size(271, 28);
             this.txtFCP.TabIndex = 15;
             this.txtFCP.TextChanged += new System.EventHandler(this.txtFCP_TextChanged);
+            this.txtFCP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFCP_KeyPress);
             // 
             // GradeManagementControl
             // 

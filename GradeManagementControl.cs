@@ -36,7 +36,7 @@ namespace synapse_record_tracking_system
 
         private void txtMidtermGrade_TextChanged(object sender, EventArgs e)
         {
-          
+
         }
 
         private void txtFCP_TextChanged(object sender, EventArgs e)
@@ -56,7 +56,7 @@ namespace synapse_record_tracking_system
 
         private void txtFinalGrade_TextChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         private void txtSA_TextChanged(object sender, EventArgs e)
@@ -71,9 +71,153 @@ namespace synapse_record_tracking_system
             else if (txtSA.Text == "6")
             {
                 FinalAverage = 6.00;
-               // (double equivalent, string remarks) = GetEquivalentandRemarks(FinalAverage);
+                // (double equivalent, string remarks) = GetEquivalentandRemarks(FinalAverage);
                 txtFinalAve.Text = FinalAverage.ToString("F2"); // + " / " + equivalent.ToString("F2");
             }
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Grades saved successfully!");
+        }
+
+        private void txtMQ1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // block non-numeric input
+            }
+        }
+
+        private void txtMQ2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // block non-numeric input
+            }
+        }
+
+        private void txtMQ3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // block non-numeric input
+            }
+        }
+
+        private void txtMQ4_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // block non-numeric input
+            }
+        }
+
+        private void txtME_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // block non-numeric input
+            }
+        }
+
+        private void txtFQ1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // block non-numeric input
+            }
+        }
+
+        private void txtFQ2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // block non-numeric input
+            }
+        }
+
+        private void txtFQ3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // block non-numeric input
+            }
+        }
+
+        private void txtFQ4_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // block non-numeric input
+            }
+        }
+
+        private void txtFE_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // block non-numeric input
+            }
+        }
+
+        private void txtFLabGrade_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // block non-numeric input
+            }
+        }
+
+        private void txtFCP_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // block non-numeric input
+            }
+        }
+
+        private void txtFA_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // block non-numeric input
+            }
+        }
+
+        private void txtMCP_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // block non-numeric input
+            }
+        }
+
+        private void txtMA_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // block non-numeric input
+            }
+        }
+
+        private void txtMLabGrade_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // block non-numeric input
+            }
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRecompute_Click(object sender, EventArgs e)
+        {
+            ComputeGrade(); // reuse your existing method
+            MessageBox.Show("Grades recomputed successfully.");
         }
 
         private void txtFinalAve_TextChanged(object sender, EventArgs e)
@@ -133,128 +277,272 @@ namespace synapse_record_tracking_system
 
         private void txtFQ1_TextChanged(object sender, EventArgs e)
         {
-            string FitemQ1 = cboFItemsQ1.SelectedItem.ToString();
-            //Convert.ToDouble(txtFQ1.Text);
-            //formula to get the Q1 AVE: (Score / Item) * 60 + 40 /
+            // Make sure the ComboBox has a selected item
+            if (cboFItemsQ1.SelectedItem == null) return;
 
-            Double FQ1;
-            Double.TryParse(txtFQ1.Text, out FQ1);
+            double score;
+            if (double.TryParse(txtFQ1.Text, out score))
+            {
+                double items = Convert.ToDouble(cboFItemsQ1.SelectedItem);
 
-            FQ1Ave = (FQ1 / Convert.ToDouble(FitemQ1)) * 60 + 40;
-            txtFQ1Ave.Text = FQ1Ave.ToString();
-            ComputeGrade();
+                // Validation: block scores higher than items
+                if (score > items)
+                {
+                    MessageBox.Show("Score cannot be higher than number of items (" + items + ")");
+                    txtFQ1.Text = items.ToString(); // reset to max allowed
+                    score = items; // use max allowed
+                }
+
+                // Compute average
+                FQ1Ave = (score / items) * 60 + 40;
+                txtFQ1Ave.Text = FQ1Ave.ToString("F2");
+                ComputeGrade();
+            }
+            else
+            {
+                // Optional: clear average if input is invalid
+                txtFQ1Ave.Text = "";
+            }
         }
 
         private void txtFQ2_TextChanged(object sender, EventArgs e)
         {
-            string FitemQ2 = cboFItemsQ2.SelectedItem.ToString();
-            //Convert.ToDouble(txtFQ2.Text);
-            //formula to get the Q2 AVE: (Score / Item) * 60 + 40 /
+            // Make sure the ComboBox has a selected item
+            if (cboFItemsQ2.SelectedItem == null) return;
 
-            Double FQ2;
-            Double.TryParse(txtFQ2.Text, out FQ2);
+            double score;
+            if (double.TryParse(txtFQ2.Text, out score))
+            {
+                double items = Convert.ToDouble(cboFItemsQ2.SelectedItem);
 
-            FQ2Ave = (FQ2 / Convert.ToDouble(FitemQ2)) * 60 + 40;
-            txtFQ2Ave.Text = FQ2Ave.ToString();
-            ComputeGrade();
+                // Validation: block scores higher than items
+                if (score > items)
+                {
+                    MessageBox.Show("Score cannot be higher than number of items (" + items + ")");
+                    txtFQ2.Text = items.ToString(); // reset to max allowed
+                    score = items; // use max allowed
+                }
+
+                // Compute average
+                FQ2Ave = (score / items) * 60 + 40;
+                txtFQ2Ave.Text = FQ2Ave.ToString("F2");
+                ComputeGrade();
+            }
+            else
+            {
+                // Optional: clear average if input is invalid
+                txtFQ2Ave.Text = "";
+            }
         }
 
         private void txtFQ3_TextChanged(object sender, EventArgs e)
         {
-            string FitemQ3 = cboFItemsQ3.SelectedItem.ToString();
-            //Convert.ToDouble(txtFQ3.Text);
-            //formula to get the Q3 AVE: (Score / Item) * 60 + 40 /
+            // Make sure the ComboBox has a selected item
+            if (cboFItemsQ3.SelectedItem == null) return;
 
-            Double FQ3;
-            Double.TryParse(txtFQ3.Text, out FQ3);
+            double score;
+            if (double.TryParse(txtFQ3.Text, out score))
+            {
+                double items = Convert.ToDouble(cboFItemsQ3.SelectedItem);
 
-            FQ3Ave = (FQ3 / Convert.ToDouble(FitemQ3)) * 60 + 40;
-            txtFQ3Ave.Text = FQ3Ave.ToString();
-            ComputeGrade();
+                // ✅ Validation: block scores higher than items
+                if (score > items)
+                {
+                    MessageBox.Show("Score cannot be higher than number of items (" + items + ")");
+                    txtFQ3.Text = items.ToString(); // reset to max allowed
+                    score = items; // use max allowed
+                }
+
+                // Compute average
+                FQ3Ave = (score / items) * 60 + 40;
+                txtFQ3Ave.Text = FQ3Ave.ToString("F2");
+                ComputeGrade();
+            }
+            else
+            {
+                // Optional: clear average if input is invalid
+                txtFQ3Ave.Text = "";
+            }
         }
 
         private void txtFQ4_TextChanged(object sender, EventArgs e)
         {
-            string FitemQ4 = cboFItemsQ4.SelectedItem.ToString();
-            //Convert.ToDouble(txtFQ4.Text);
-            //formula to get the Q4 AVE: (Score / Item) * 60 + 40 /
+            // Make sure the ComboBox has a selected item
+            if (cboFItemsQ4.SelectedItem == null) return;
 
-            Double FQ4;
-            Double.TryParse(txtFQ4.Text, out FQ4);
+            double score;
+            if (double.TryParse(txtFQ4.Text, out score))
+            {
+                double items = Convert.ToDouble(cboFItemsQ4.SelectedItem);
 
-            FQ4Ave = (FQ4 / Convert.ToDouble(FitemQ4)) * 60 + 40;
-            txtFQ4Ave.Text = FQ4Ave.ToString();
-            ComputeGrade();
+                // Validation: block scores higher than items
+                if (score > items)
+                {
+                    MessageBox.Show("Score cannot be higher than number of items (" + items + ")");
+                    txtFQ4.Text = items.ToString(); // reset to max allowed
+                    score = items; // use max allowed
+                }
+
+                // Compute average
+                FQ4Ave = (score / items) * 60 + 40;
+                txtFQ4Ave.Text = FQ4Ave.ToString("F2");
+                ComputeGrade();
+            }
+            else
+            {
+                // Optional: clear average if input is invalid
+                txtFQ4Ave.Text = "";
+            }
         }
 
         private void txtFE_TextChanged(object sender, EventArgs e)
         {
-            string FitemFE = cboFItemsFE.SelectedItem.ToString();
-            //Convert.ToDouble(txtFE.Text);
-            //formula to get the FE AVE: (Score / Item) * 60 + 40 /
+            // Make sure the ComboBox has a selected item
+            if (cboFItemsFE.SelectedItem == null) return;
 
-            Double FE;
-            Double.TryParse(txtFE.Text, out FE);
+            double score;
+            if (double.TryParse(txtFE.Text, out score))
+            {
+                double items = Convert.ToDouble(cboFItemsFE.SelectedItem);
 
-            FEave = (FE / Convert.ToDouble(FitemFE)) * 60 + 40;
-            txtFEAve.Text = FEave.ToString();
-            ComputeGrade();
+                // Validation: block scores higher than items
+                if (score > items)
+                {
+                    MessageBox.Show("Score cannot be higher than number of items (" + items + ")");
+                    txtFE.Text = items.ToString(); // reset to max allowed
+                    score = items; // use max allowed
+                }
+
+                // Compute average
+                FEave = (score / items) * 60 + 40;
+                txtFEAve.Text = FEave.ToString("F2");
+                ComputeGrade();
+            }
+            else
+            {
+                // Optional: clear average if input is invalid
+                txtFEAve.Text = "";
+            }
         }
 
         private void txtMQ2_TextChanged(object sender, EventArgs e)
         {
-            string MitemQ2 = cboMItemsQ2.SelectedItem.ToString();
-            //Convert.ToDouble(txtMQ2.Text);
-            //formula to get the Q2 AVE: (Score / Item) * 60 + 40 /
+            // Make sure the ComboBox has a selected item
+            if (cboMItemsQ2.SelectedItem == null) return;
 
-            Double MQ2;
-            Double.TryParse(txtMQ2.Text, out MQ2);
+            double score;
+            if (double.TryParse(txtMQ2.Text, out score))
+            {
+                double items = Convert.ToDouble(cboMItemsQ2.SelectedItem);
 
-            MQ2Ave = (MQ2 / Convert.ToDouble(MitemQ2)) * 60 + 40;
-            txtMQ2Ave.Text = MQ2Ave.ToString();
-            ComputeGrade();
+                // Validation: block scores higher than items
+                if (score > items)
+                {
+                    MessageBox.Show("Score cannot be higher than number of items (" + items + ")");
+                    txtMQ2.Text = items.ToString(); // reset to max allowed
+                    score = items; // use max allowed
+                }
+
+                // Compute average
+                MQ2Ave = (score / items) * 60 + 40;
+                txtMQ2Ave.Text = MQ2Ave.ToString("F2");
+                ComputeGrade();
+            }
+            else
+            {
+                // Optional: clear average if input is invalid
+                txtMQ2Ave.Text = "";
+            }
         }
 
         private void txtMQ3_TextChanged(object sender, EventArgs e)
         {
-            string MitemQ3 = cboMItemsQ3.SelectedItem.ToString();
-            //Convert.ToDouble(txtMQ3.Text);
-            //formula to get the Q3 AVE: (Score / Item) * 60 + 40 /
+            // Make sure the ComboBox has a selected item
+            if (cboMItemsQ3.SelectedItem == null) return;
 
-            Double MQ3;
-            Double.TryParse(txtMQ3.Text, out MQ3);
+            double score;
+            if (double.TryParse(txtMQ3.Text, out score))
+            {
+                double items = Convert.ToDouble(cboMItemsQ3.SelectedItem);
 
-            MQ3Ave = (MQ3 / Convert.ToDouble(MitemQ3)) * 60 + 40;
-            txtMQ3Ave.Text = MQ3Ave.ToString();
-            ComputeGrade();
+                // Validation: block scores higher than items
+                if (score > items)
+                {
+                    MessageBox.Show("Score cannot be higher than number of items (" + items + ")");
+                    txtMQ3.Text = items.ToString(); // reset to max allowed
+                    score = items; // use max allowed
+                }
+
+                // Compute average
+                MQ3Ave = (score / items) * 60 + 40;
+                txtMQ3Ave.Text = MQ3Ave.ToString("F2");
+                ComputeGrade();
+            }
+            else
+            {
+                // Optional: clear average if input is invalid
+                txtMQ3Ave.Text = "";
+            }
         }
 
         private void txtMQ4_TextChanged(object sender, EventArgs e)
         {
-            string MitemQ4 = cboMItemsQ4.SelectedItem.ToString();
-            //Convert.ToDouble(txtMQ4.Text);
-            //formula to get the Q4 AVE: (Score / Item) * 60 + 40 /
+            // Make sure the ComboBox has a selected item
+            if (cboMItemsQ4.SelectedItem == null) return;
 
-            Double MQ4;
-            Double.TryParse(txtMQ4.Text, out MQ4);
+            double score;
+            if (double.TryParse(txtMQ4.Text, out score))
+            {
+                double items = Convert.ToDouble(cboMItemsQ4.SelectedItem);
 
-            MQ4Ave = (MQ4 / Convert.ToDouble(MitemQ4)) * 60 + 40;
-            txtMQ4Ave.Text = MQ4Ave.ToString();
-            ComputeGrade();
+                // Validation: block scores higher than items
+                if (score > items)
+                {
+                    MessageBox.Show("Score cannot be higher than number of items (" + items + ")");
+                    txtMQ4.Text = items.ToString(); // reset to max allowed
+                    score = items; // use max allowed
+                }
+
+                // Compute average
+                MQ4Ave = (score / items) * 60 + 40;
+                txtMQ4Ave.Text = MQ4Ave.ToString("F2");
+                ComputeGrade();
+            }
+            else
+            {
+                // Optional: clear average if input is invalid
+                txtMQ4Ave.Text = "";
+            }
         }
 
         private void txtME_TextChanged(object sender, EventArgs e)
         {
-            string MItemsMe = cboMItemsME.SelectedItem.ToString();
-            //Convert.ToDouble(txtME.Text);
-            //formula to get the ME AVE: (Score / Item) * 60 + 40 /
+            // Make sure the ComboBox has a selected item
+            if (cboMItemsME.SelectedItem == null) return;
 
-            Double ME;
-            Double.TryParse(txtME.Text, out ME);
+            double score;
+            if (double.TryParse(txtME.Text, out score))
+            {
+                double items = Convert.ToDouble(cboMItemsME.SelectedItem);
 
-            MEave = (ME / Convert.ToDouble(MItemsMe)) * 60 + 40;
-            txtMEAve.Text = MEave.ToString();
-            ComputeGrade();
+                // Validation: block scores higher than items
+                if (score > items)
+                {
+                    MessageBox.Show("Score cannot be higher than number of items (" + items + ")");
+                    txtME.Text = items.ToString(); // reset to max allowed
+                    score = items; // use max allowed
+                }
+
+                // Compute average
+                MEave = (score / items) * 60 + 40;
+                txtMEAve.Text = MEave.ToString("F2");
+                ComputeGrade();
+            }
+            else
+            {
+                // Optional: clear average if input is invalid
+                txtMQ1Ave.Text = "";
+            }
         }
 
 
@@ -268,53 +556,67 @@ namespace synapse_record_tracking_system
             txtSA.Clear();
         }
 
-       /* private (double, string) GetEquivalentandRemarks(double average)
-        {
-            if (average == 4.00)
-                return (4.00, "incomplete");
-            else if (average == 6.00)
-                return (6.00, "UW");
+        /* private (double, string) GetEquivalentandRemarks(double average)
+         {
+             if (average == 4.00)
+                 return (4.00, "incomplete");
+             else if (average == 6.00)
+                 return (6.00, "UW");
 
-            if (average >= 97.00 && average <= 100.00)
-                return (1.00, "Passed");
-            else if (average >= 94.00 && average < 97.00)
-                return (1.25, "Passed");
-            else if (average >= 91.00 && average < 94.00)
-                return (1.50, "Passed");
-            else if (average >= 88.00 && average < 91.00)
-                return (1.75, "Passed");
-            else if (average >= 85.00 && average < 88.00)
-                return (2.00, "Passed");
-            else if (average >= 82.00 && average < 85.00)
-                return (2.25, "Passed");
-            else if (average >= 79.00 && average < 82.00)
-                return (2.50, "Passed");
-            else if (average >= 76.00 && average < 79.00)
-                return (2.75, "Passed");
-            else if (average >= 74.00 && average < 76.00)
-                return (3.00, "Passed");
-            else if (average < 74.00)
-                return (5.00, "Failed");
+             if (average >= 97.00 && average <= 100.00)
+                 return (1.00, "Passed");
+             else if (average >= 94.00 && average < 97.00)
+                 return (1.25, "Passed");
+             else if (average >= 91.00 && average < 94.00)
+                 return (1.50, "Passed");
+             else if (average >= 88.00 && average < 91.00)
+                 return (1.75, "Passed");
+             else if (average >= 85.00 && average < 88.00)
+                 return (2.00, "Passed");
+             else if (average >= 82.00 && average < 85.00)
+                 return (2.25, "Passed");
+             else if (average >= 79.00 && average < 82.00)
+                 return (2.50, "Passed");
+             else if (average >= 76.00 && average < 79.00)
+                 return (2.75, "Passed");
+             else if (average >= 74.00 && average < 76.00)
+                 return (3.00, "Passed");
+             else if (average < 74.00)
+                 return (5.00, "Failed");
 
-            return (0, "Invalid Grade");
-        }
-       */
+             return (0, "Invalid Grade");
+         }
+        */
         private void txtMQ1_TextChanged(object sender, EventArgs e)
         {
-            string MitemQ1 = cboMItemsQ1.SelectedItem.ToString();
-            //Convert.ToDouble(txtMQ1.Text);
-            //formula to get the Q1 AVE: (Score / Item) * 60 + 40 /
+            // Make sure the ComboBox has a selected item
+            if (cboMItemsQ1.SelectedItem == null) return;
 
-            Double MQ1;
-            Double.TryParse(txtMQ1.Text, out MQ1);
+            double score;
+            if (double.TryParse(txtMQ1.Text, out score))
+            {
+                double items = Convert.ToDouble(cboMItemsQ1.SelectedItem);
 
-            MQ1Ave = (MQ1 / Convert.ToDouble(MitemQ1)) * 60 + 40;
-            txtMQ1Ave.Text = MQ1Ave.ToString();
-            ComputeGrade();
+                // Validation: block scores higher than items
+                if (score > items)
+                {
+                    MessageBox.Show("Score cannot be higher than number of items (" + items + ")");
+                    txtMQ1.Text = items.ToString(); // reset to max allowed
+                    score = items; // use max allowed
+                }
+
+                // Compute average
+                MQ1Ave = (score / items) * 60 + 40;
+                txtMQ1Ave.Text = MQ1Ave.ToString("F2");
+                ComputeGrade();
+            }
+            else
+            {
+                // Optional: clear average if input is invalid
+                txtMQ1Ave.Text = "";
+            }
+
         }
 
-
-
     }
-
 }

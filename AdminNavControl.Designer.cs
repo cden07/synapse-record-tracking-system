@@ -33,6 +33,7 @@
             this.btnGradeManagement = new System.Windows.Forms.Button();
             this.btnStudentRecord = new System.Windows.Forms.Button();
             this.lblNav = new System.Windows.Forms.Label();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -90,17 +91,29 @@
             this.lblNav.TabIndex = 10;
             this.lblNav.Text = "SYNAPSE ";
             // 
+            // btnLogout
+            // 
+            this.btnLogout.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Location = new System.Drawing.Point(22, 605);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(311, 60);
+            this.btnLogout.TabIndex = 15;
+            this.btnLogout.Text = "LOG OUT";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
             // AdminNavControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnStudentList);
             this.Controls.Add(this.btnGradeManagement);
             this.Controls.Add(this.btnStudentRecord);
             this.Controls.Add(this.lblNav);
             this.Name = "AdminNavControl";
-            this.Size = new System.Drawing.Size(369, 586);
+            this.Size = new System.Drawing.Size(369, 708);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,5 +126,6 @@
         private System.Windows.Forms.Button btnGradeManagement;
         private System.Windows.Forms.Button btnStudentRecord;
         private System.Windows.Forms.Label lblNav;
+        private System.Windows.Forms.Button btnLogout;
     }
 }

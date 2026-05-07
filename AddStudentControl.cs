@@ -28,9 +28,11 @@ namespace synapse_record_tracking_system
         }
 
 
-        
-            private void btnSave_Click(object sender, EventArgs e)
+
+        private void btnSave_Click(object sender, EventArgs e)
         {
+
+            if (!ValidateFields()) return;
             var student = new Student
             {
                 StudentID = int.Parse(txtStudentID.Text),
@@ -47,6 +49,87 @@ namespace synapse_record_tracking_system
             StudentRepository.AddStudent(student);
             MessageBox.Show("Student added successfully!");
         }
+
+        // Names: only letters + space
+        private void txtFname_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ')
+                e.Handled = true;
+        }
+
+        private void txtLname_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ')
+                e.Handled = true;
+        }
+
+        // Contact Number: only digits
+        private void txtContactNumber_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+                e.Handled = true;
+        }
+
+        // Username: letters, digits, underscore
+        private void txtUsername_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar) && e.KeyChar != '_')
+                e.Handled = true;
+        }
+        private bool ValidateFields()
+        {
+            bool isValid = true;
+            errorProvider1.Clear();
+
+            if (string.IsNullOrWhiteSpace(txtStudentID.Text))
+            {
+                errorProvider1.SetError(txtStudentID, "Student ID is required.");
+                isValid = false;
+            }
+            if (string.IsNullOrWhiteSpace(txtFname.Text))
+            {
+                errorProvider1.SetError(txtFname, "First name is required.");
+                isValid = false;
+            }
+            if (string.IsNullOrWhiteSpace(txtLname.Text))
+            {
+                errorProvider1.SetError(txtLname, "Last name is required.");
+                isValid = false;
+            }
+            if (string.IsNullOrWhiteSpace(txtUsername.Text))
+            {
+                errorProvider1.SetError(txtUsername, "Username is required.");
+                isValid = false;
+            }
+            if (cmbYearLevel.SelectedIndex == -1)
+            {
+                errorProvider1.SetError(cmbYearLevel, "Select a Year Level.");
+                isValid = false;
+            }
+            if (cmbBlock.SelectedIndex == -1)
+            {
+                errorProvider1.SetError(cmbBlock, "Select a Block.");
+                isValid = false;
+            }
+            if (cmbProgram.SelectedIndex == -1)
+            {
+                errorProvider1.SetError(cmbProgram, "Select a Program Course.");
+                isValid = false;
+            }
+            if (string.IsNullOrWhiteSpace(txtContactNumber.Text))
+            {
+                errorProvider1.SetError(txtContactNumber, "Contact number is required.");
+                isValid = false;
+            }
+            else if (txtContactNumber.Text.Length < 10)
+            {
+                errorProvider1.SetError(txtContactNumber, "Contact number must be at least 10 digits.");
+                isValid = false;
+            }
+
+            return isValid;
+        }
+
 
     }
 }
