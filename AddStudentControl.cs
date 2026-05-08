@@ -31,21 +31,21 @@ namespace synapse_record_tracking_system
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-
-            if (!ValidateFields()) return;
+            // Create new student from admin input
             var student = new Student
             {
                 StudentID = int.Parse(txtStudentID.Text),
-                Username = txtUsername.Text,
+                Password = txtPassword.Text,   // Admin sets this
                 FirstName = txtFname.Text,
                 LastName = txtLname.Text,
                 YearLevel = cmbYearLevel.Text,
+                ProgramCourse = cmbProgram.Text,
                 Birthday = dtpBirthday.Value,
                 Block = cmbBlock.Text,
-                ContactNumber = txtContactNumber.Text,
-                ProgramCourse = cmbProgram.Text
+                ContactNumber = txtContactNumber.Text
             };
 
+            // Save to repository
             StudentRepository.AddStudent(student);
             MessageBox.Show("Student added successfully!");
         }
@@ -96,9 +96,9 @@ namespace synapse_record_tracking_system
                 errorProvider1.SetError(txtLname, "Last name is required.");
                 isValid = false;
             }
-            if (string.IsNullOrWhiteSpace(txtUsername.Text))
+            if (string.IsNullOrWhiteSpace(txtPassword.Text))
             {
-                errorProvider1.SetError(txtUsername, "Username is required.");
+                errorProvider1.SetError(txtPassword, "Username is required.");
                 isValid = false;
             }
             if (cmbYearLevel.SelectedIndex == -1)

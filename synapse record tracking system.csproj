@@ -66,12 +66,14 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Grade.cs" />
     <Compile Include="GradeManagementControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GradeManagementControl.Designer.cs">
       <DependentUpon>GradeManagementControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Performance.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DashboardControl.cs">

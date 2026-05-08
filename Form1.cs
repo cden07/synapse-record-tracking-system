@@ -19,27 +19,43 @@ namespace synapse_record_tracking_system
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (!ValidateLogin()) return;
 
-            string username = txtUsername.Text.Trim();
-            string password = txtPassword.Text.Trim();
+            string enteredId = txtStudentID.Text;
+            string enteredPassword = txtPassword.Text;
 
-            if (username == "admin" && password == "admin123")
+            // ✅ Admin login
+            if (enteredId == "admin" && enteredPassword == "admin123")
             {
-                // Admin goes to Form2 with Admin role
-                Form2 form2 = new Form2("Admin");
-                form2.Show();
+                Form2 adminForm = new Form2("Admin");
+                adminForm.Show();
+                this.Hide();
+                return;
+            }
+
+            // ✅ Student login
+            int studentId;
+            if (!int.TryParse(enteredId, out studentId))
+            {
+                MessageBox.Show("Invalid Student ID format.");
+                return;
+            }
+
+            var student = StudentRepository.GetStudentById(studentId);
+            if (student != null && student.Password == enteredPassword)
+            {
+                Form2 studentForm = new Form2("Student");
+                studentForm.Tag = student.StudentID; // pass ID into Form2
+                studentForm.Show();
                 this.Hide();
             }
             else
             {
-                // Student goes to Form2 with Student role
-                Form2 form2 = new Form2("Student");
-                form2.Tag = username; // store studentId in Tag property
-                form2.Show();
-                this.Hide();
+                MessageBox.Show("Invalid Student ID or Password.");
             }
         }
+
+
+
 
         private void txtUsername_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -56,9 +72,9 @@ namespace synapse_record_tracking_system
             bool isValid = true;
             errorProvider1.Clear();
 
-            if (string.IsNullOrWhiteSpace(txtUsername.Text))
+            if (string.IsNullOrWhiteSpace(txtStudentID.Text))
             {
-                errorProvider1.SetError(txtUsername, "Username is required.");
+                errorProvider1.SetError(txtStudentID, "Username is required.");
                 isValid = false;
             }
             if (string.IsNullOrWhiteSpace(txtPassword.Text))

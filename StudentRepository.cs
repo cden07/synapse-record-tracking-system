@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.ComponentModel;
-
+using System.Linq;
 
 namespace synapse_record_tracking_system
 {
@@ -22,7 +19,8 @@ namespace synapse_record_tracking_system
             var student = GetStudentById(updated.StudentID);
             if (student != null)
             {
-                student.Username = updated.Username;
+                student.StudentID = updated.StudentID;
+                student.Password = updated.Password;
                 student.FirstName = updated.FirstName;
                 student.LastName = updated.LastName;
                 student.YearLevel = updated.YearLevel;
@@ -38,6 +36,41 @@ namespace synapse_record_tracking_system
             var student = GetStudentById(id);
             if (student != null)
                 Students.Remove(student);
+        }
+
+        // Add a grade to a student
+        public static void AddGrade(Grade grade)
+        {
+            var student = Students.FirstOrDefault(s => s.StudentID == grade.StudentID);
+            if (student != null)
+            {
+                if (student.Grades == null)
+                    student.Grades = new List<Grade>();
+
+                student.Grades.Add(grade);
+            }
+        }
+
+        // Performance calculation
+        public static Performance GetPerformance(int studentId)
+        {
+            var student = GetStudentById(studentId);
+            if (student == null || student.Grades == null || student.Grades.Count == 0)
+                return null;
+
+            double avg = student.Grades.Average(g => g.FinalGrade);
+            int passed = student.Grades.Count(g => g.FinalGrade >= 75);
+            int failed = student.Grades.Count(g => g.FinalGrade < 75);
+
+            string remarks = avg >= 75 ? "Passed" : "Failed";
+
+            return new Performance
+            {
+                AverageGrade = avg,
+                PassedCount = passed,
+                FailedCount = failed,
+                Remarks = remarks
+            };
         }
     }
 }

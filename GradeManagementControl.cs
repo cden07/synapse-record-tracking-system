@@ -78,8 +78,38 @@ namespace synapse_record_tracking_system
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+          
+            var grade = new Grade
+            {
+                StudentID = int.Parse(txtSN.Text),
+                Subject = txtSubject.Text,
+                MCP = MCP,
+                MA = MA,
+                MQ1Ave = MQ1Ave,
+                MQ2Ave = MQ2Ave,
+                MQ3Ave = MQ3Ave,
+                MQ4Ave = MQ4Ave,
+                MEave = MEave,
+                MLabGrade = MLabGrade,
+                MidtermGrade = MidtermGrade,
+                FCP = FCP,
+                FA = FA,
+                FQ1Ave = FQ1Ave,
+                FQ2Ave = FQ2Ave,
+                FQ3Ave = FQ3Ave,
+                FQ4Ave = FQ4Ave,
+                FEave = FEave,
+                FLabGrade = FLabGrade,
+                FinalGrade = FinalGrade
+            };
+
+            // Save to repository
+            StudentRepository.AddGrade(grade);
+
             MessageBox.Show("Grades saved successfully!");
         }
+
+        
 
         private void txtMQ1_KeyPress(object sender, KeyPressEventArgs e)
         {

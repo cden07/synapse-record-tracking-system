@@ -18,26 +18,29 @@ namespace synapse_record_tracking_system
         {
             InitializeComponent();
             this.studentId = studentId;
-            LoadStudentInfo();
+            LoadStudentInfo(int.Parse(studentId));
         }
 
-        private void LoadStudentInfo()
+        public void LoadStudentInfo(int studentId)
         {
-            // Later: SQL query using studentId
-            // SELECT s.StudentID, u.Username, s.FirstName, s.LastName, s.Gender,
-            //        s.BirthDate, s.Address, s.ContactNumber
-            // FROM Students s
-            // JOIN Users u ON s.StudentID = u.UserID
-            // WHERE s.StudentID = @studentId;
 
-            lblStudentID.Text = studentId;
-            lblUser.Text = "demo_user";
-            lblLName.Text = "Doe";
-            lblFName.Text = "John";
-            lblBirthday.Text = "2000-01-01";
-            lblNumber.Text = "09123456789";
-            lblGender.Text = "Male";
-            lblAddress.Text = "Sample Address";
+
+            var student = StudentRepository.GetStudentById(studentId);
+            if (student != null)
+            {
+                lblID.Text = student.StudentID.ToString();
+                lblFName.Text = student.FirstName;
+                lblLName.Text = student.LastName;
+
+                lblProgram.Text = student.ProgramCourse;
+             
+                lblNumber.Text = student.ContactNumber;
+                lblBirthday.Text = student.Birthday.ToShortDateString();
+            }
+            else
+            {
+                MessageBox.Show("Student not found.");
+            }
         }
         public DashboardControl()
         {

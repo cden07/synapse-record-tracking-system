@@ -37,7 +37,6 @@
             this.cmbProgram = new System.Windows.Forms.ComboBox();
             this.cmbBlock = new System.Windows.Forms.ComboBox();
             this.cmbYearLevel = new System.Windows.Forms.ComboBox();
-            this.txtUsername = new System.Windows.Forms.TextBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.txtLname = new System.Windows.Forms.TextBox();
             this.txtStudentID = new System.Windows.Forms.TextBox();
@@ -48,10 +47,11 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.labelsid = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -149,16 +149,6 @@
             this.cmbYearLevel.Name = "cmbYearLevel";
             this.cmbYearLevel.Size = new System.Drawing.Size(192, 32);
             this.cmbYearLevel.TabIndex = 58;
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.txtUsername.Font = new System.Drawing.Font("Sitka Small", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(242, 235);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(187, 29);
-            this.txtUsername.TabIndex = 57;
-            this.txtUsername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsername_KeyPress);
             // 
             // btnClear
             // 
@@ -267,17 +257,6 @@
             this.label4.TabIndex = 47;
             this.label4.Text = "Last Name: ";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label2.Location = new System.Drawing.Point(20, 234);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 29);
-            this.label2.TabIndex = 46;
-            this.label2.Text = "Username:";
-            // 
             // labelsid
             // 
             this.labelsid.AutoSize = true;
@@ -304,10 +283,33 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // txtPassword
+            // 
+            this.txtPassword.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.txtPassword.Font = new System.Drawing.Font("Sitka Small", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(243, 234);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(187, 29);
+            this.txtPassword.TabIndex = 86;
+            this.txtPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPassword_KeyPress);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label2.Location = new System.Drawing.Point(21, 233);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(116, 29);
+            this.label2.TabIndex = 85;
+            this.label2.Text = "Password:";
+            // 
             // EditStudentControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtContactNumber);
             this.Controls.Add(this.dtpBirthday);
@@ -315,7 +317,6 @@
             this.Controls.Add(this.cmbProgram);
             this.Controls.Add(this.cmbBlock);
             this.Controls.Add(this.cmbYearLevel);
-            this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.txtLname);
             this.Controls.Add(this.txtStudentID);
@@ -326,7 +327,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.labelsid);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSearchStudent);
@@ -349,7 +349,6 @@
         private System.Windows.Forms.ComboBox cmbProgram;
         private System.Windows.Forms.ComboBox cmbBlock;
         private System.Windows.Forms.ComboBox cmbYearLevel;
-        private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.TextBox txtLname;
         private System.Windows.Forms.TextBox txtStudentID;
@@ -360,9 +359,10 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label labelsid;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Label label2;
     }
 }

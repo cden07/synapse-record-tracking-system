@@ -33,7 +33,10 @@
             this.lblPassedSubjects = new System.Windows.Forms.Label();
             this.lblFailedSubjects = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblStudentGrade = new System.Windows.Forms.Label();
+            this.lblSubjectsPassed = new System.Windows.Forms.Label();
+            this.lblSubjectsFailed = new System.Windows.Forms.Label();
+            this.lblRemarks = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -91,20 +94,58 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Remarks : ";
             // 
-            // label3
+            // lblStudentGrade
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(243, 157);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 16);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "LblStudentGrade";
+            this.lblStudentGrade.AutoSize = true;
+            this.lblStudentGrade.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudentGrade.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblStudentGrade.Location = new System.Drawing.Point(257, 160);
+            this.lblStudentGrade.Name = "lblStudentGrade";
+            this.lblStudentGrade.Size = new System.Drawing.Size(19, 26);
+            this.lblStudentGrade.TabIndex = 5;
+            this.lblStudentGrade.Text = "I";
+            // 
+            // lblSubjectsPassed
+            // 
+            this.lblSubjectsPassed.AutoSize = true;
+            this.lblSubjectsPassed.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubjectsPassed.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblSubjectsPassed.Location = new System.Drawing.Point(257, 251);
+            this.lblSubjectsPassed.Name = "lblSubjectsPassed";
+            this.lblSubjectsPassed.Size = new System.Drawing.Size(19, 26);
+            this.lblSubjectsPassed.TabIndex = 6;
+            this.lblSubjectsPassed.Text = "I";
+            // 
+            // lblSubjectsFailed
+            // 
+            this.lblSubjectsFailed.AutoSize = true;
+            this.lblSubjectsFailed.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubjectsFailed.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblSubjectsFailed.Location = new System.Drawing.Point(257, 400);
+            this.lblSubjectsFailed.Name = "lblSubjectsFailed";
+            this.lblSubjectsFailed.Size = new System.Drawing.Size(19, 26);
+            this.lblSubjectsFailed.TabIndex = 7;
+            this.lblSubjectsFailed.Text = "I";
+            // 
+            // lblRemarks
+            // 
+            this.lblRemarks.AutoSize = true;
+            this.lblRemarks.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRemarks.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblRemarks.Location = new System.Drawing.Point(257, 510);
+            this.lblRemarks.Name = "lblRemarks";
+            this.lblRemarks.Size = new System.Drawing.Size(19, 26);
+            this.lblRemarks.TabIndex = 8;
+            this.lblRemarks.Text = "I";
             // 
             // PerformanceControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblRemarks);
+            this.Controls.Add(this.lblSubjectsFailed);
+            this.Controls.Add(this.lblSubjectsPassed);
+            this.Controls.Add(this.lblStudentGrade);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblFailedSubjects);
             this.Controls.Add(this.lblPassedSubjects);
@@ -112,6 +153,7 @@
             this.Controls.Add(this.label1);
             this.Name = "PerformanceControl";
             this.Size = new System.Drawing.Size(881, 600);
+            this.Load += new System.EventHandler(this.PerformanceControl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,6 +166,9 @@
         private System.Windows.Forms.Label lblPassedSubjects;
         private System.Windows.Forms.Label lblFailedSubjects;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblStudentGrade;
+        private System.Windows.Forms.Label lblSubjectsPassed;
+        private System.Windows.Forms.Label lblSubjectsFailed;
+        private System.Windows.Forms.Label lblRemarks;
     }
 }

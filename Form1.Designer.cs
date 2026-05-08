@@ -30,11 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.lbltitle = new System.Windows.Forms.Label();
-            this.lblusername = new System.Windows.Forms.Label();
+            this.lbl = new System.Windows.Forms.Label();
             this.lblpassword = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtStudentID = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.picLogo = new System.Windows.Forms.PictureBox();
@@ -54,16 +54,16 @@
             this.lbltitle.TabIndex = 0;
             this.lbltitle.Text = "Login to Synapse High School System";
             // 
-            // lblusername
+            // lbl
             // 
-            this.lblusername.AutoSize = true;
-            this.lblusername.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblusername.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.lblusername.Location = new System.Drawing.Point(697, 196);
-            this.lblusername.Name = "lblusername";
-            this.lblusername.Size = new System.Drawing.Size(114, 29);
-            this.lblusername.TabIndex = 1;
-            this.lblusername.Text = "Username:";
+            this.lbl.AutoSize = true;
+            this.lbl.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lbl.Location = new System.Drawing.Point(697, 196);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(113, 29);
+            this.lbl.TabIndex = 1;
+            this.lbl.Text = "Student ID";
             // 
             // lblpassword
             // 
@@ -100,15 +100,15 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "© 2026 - Synapse Edu v1.1.1";
             // 
-            // txtUsername
+            // txtStudentID
             // 
-            this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtUsername.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(817, 196);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(304, 33);
-            this.txtUsername.TabIndex = 5;
-            this.txtUsername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsername_KeyPress);
+            this.txtStudentID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtStudentID.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStudentID.Location = new System.Drawing.Point(817, 196);
+            this.txtStudentID.Name = "txtStudentID";
+            this.txtStudentID.Size = new System.Drawing.Size(304, 33);
+            this.txtStudentID.TabIndex = 5;
+            this.txtStudentID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsername_KeyPress);
             // 
             // txtPassword
             // 
@@ -154,11 +154,11 @@
             this.Controls.Add(this.picLogo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.txtStudentID);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.lblpassword);
-            this.Controls.Add(this.lblusername);
+            this.Controls.Add(this.lbl);
             this.Controls.Add(this.lbltitle);
             this.ForeColor = System.Drawing.Color.Gold;
             this.Name = "Form1";
@@ -173,11 +173,11 @@
         #endregion
 
         private System.Windows.Forms.Label lbltitle;
-        private System.Windows.Forms.Label lblusername;
+        private System.Windows.Forms.Label lbl;
         private System.Windows.Forms.Label lblpassword;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtStudentID;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox picLogo;

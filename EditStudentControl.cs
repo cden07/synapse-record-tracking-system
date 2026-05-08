@@ -30,7 +30,7 @@ namespace synapse_record_tracking_system
                     // Fill fields
                     txtFname.Text = student.FirstName;
                     txtLname.Text = student.LastName;
-                    txtUsername.Text = student.Username;
+                    txtPassword.Text = student.Password;
                     cmbYearLevel.Text = student.YearLevel;
                     dtpBirthday.Value = student.Birthday;
                     cmbBlock.Text = student.Block;
@@ -40,7 +40,7 @@ namespace synapse_record_tracking_system
                     // ✅ Unlock fields
                     txtFname.Enabled = true;
                     txtLname.Enabled = true;
-                    txtUsername.Enabled = true;
+                    txtPassword.Enabled = true;
                     cmbYearLevel.Enabled = true;
                     dtpBirthday.Enabled = true;
                     cmbBlock.Enabled = true;
@@ -74,7 +74,7 @@ namespace synapse_record_tracking_system
                 StudentID = id,
                 FirstName = txtFname.Text,
                 LastName = txtLname.Text,
-                Username = txtUsername.Text,
+                Password = txtPassword.Text,
                 YearLevel = cmbYearLevel.Text,
                 Birthday = dtpBirthday.Value,
                 Block = cmbBlock.Text,
@@ -94,7 +94,7 @@ namespace synapse_record_tracking_system
 
         private void LockFields()
         {
-            txtUsername.Enabled = false;
+            txtPassword.Enabled = false;
             cmbYearLevel.Enabled = false;
             cmbBlock.Enabled = false;
             txtLname.Enabled = false;
@@ -111,7 +111,7 @@ namespace synapse_record_tracking_system
             txtStudentID.Clear();
             txtFname.Clear();
             txtLname.Clear();
-            txtUsername.Clear();
+            txtPassword.Clear();
             cmbYearLevel.SelectedIndex = -1;
             dtpBirthday.Value = DateTime.Today;
             cmbBlock.SelectedIndex = -1;
@@ -148,6 +148,26 @@ namespace synapse_record_tracking_system
 
         }
 
+        private void txtPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Allow control keys (Backspace, Delete, etc.)
+            if (char.IsControl(e.KeyChar))
+            {
+                return;
+            }
+
+            // Block spaces if you don’t want them in passwords
+            if (e.KeyChar == ' ')
+            {
+                e.Handled = true;
+                return;
+            }
+
+            // ✅ Allow everything else: letters, digits, symbols
+            e.Handled = false;
+        }
+
+
         private void txtFname_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ')
@@ -171,9 +191,9 @@ namespace synapse_record_tracking_system
                 errorProvider1.SetError(txtLname, "Last name is required.");
                 isValid = false;
             }
-            if (string.IsNullOrWhiteSpace(txtUsername.Text))
+            if (string.IsNullOrWhiteSpace(txtPassword.Text))
             {
-                errorProvider1.SetError(txtUsername, "Username is required.");
+                errorProvider1.SetError(txtPassword, "Password is required.");
                 isValid = false;
             }
             if (cmbYearLevel.SelectedIndex == -1)

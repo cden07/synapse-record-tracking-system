@@ -43,7 +43,7 @@
             this.lblAddStudent = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
-            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.cmbYearLevel = new System.Windows.Forms.ComboBox();
             this.cmbBlock = new System.Windows.Forms.ComboBox();
             this.cmbProgram = new System.Windows.Forms.ComboBox();
@@ -138,9 +138,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label2.Location = new System.Drawing.Point(27, 151);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 29);
+            this.label2.Size = new System.Drawing.Size(116, 29);
             this.label2.TabIndex = 17;
-            this.label2.Text = "Username:";
+            this.label2.Text = "Password:";
             // 
             // labelsid
             // 
@@ -204,15 +204,15 @@
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
             // 
-            // txtUsername
+            // txtPassword
             // 
-            this.txtUsername.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.txtUsername.Font = new System.Drawing.Font("Sitka Small", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(249, 152);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(187, 29);
-            this.txtUsername.TabIndex = 38;
-            this.txtUsername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsername_KeyPress);
+            this.txtPassword.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.txtPassword.Font = new System.Drawing.Font("Sitka Small", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(249, 152);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(187, 29);
+            this.txtPassword.TabIndex = 38;
+            this.txtPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsername_KeyPress);
             // 
             // cmbYearLevel
             // 
@@ -303,7 +303,7 @@
             this.Controls.Add(this.cmbProgram);
             this.Controls.Add(this.cmbBlock);
             this.Controls.Add(this.cmbYearLevel);
-            this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.lblAddStudent);
@@ -344,7 +344,7 @@
         private System.Windows.Forms.Label lblAddStudent;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.ComboBox cmbYearLevel;
         private System.Windows.Forms.ComboBox cmbBlock;
         private System.Windows.Forms.ComboBox cmbProgram;
