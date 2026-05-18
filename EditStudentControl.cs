@@ -30,7 +30,6 @@ namespace synapse_record_tracking_system
                     // Fill fields
                     txtFname.Text = student.FirstName;
                     txtLname.Text = student.LastName;
-                    txtPassword.Text = student.Password;
                     cmbYearLevel.Text = student.YearLevel;
                     dtpBirthday.Value = student.Birthday;
                     cmbBlock.Text = student.Block;
@@ -40,7 +39,6 @@ namespace synapse_record_tracking_system
                     // ✅ Unlock fields
                     txtFname.Enabled = true;
                     txtLname.Enabled = true;
-                    txtPassword.Enabled = true;
                     cmbYearLevel.Enabled = true;
                     dtpBirthday.Enabled = true;
                     cmbBlock.Enabled = true;
@@ -74,7 +72,6 @@ namespace synapse_record_tracking_system
                 StudentID = id,
                 FirstName = txtFname.Text,
                 LastName = txtLname.Text,
-                Password = txtPassword.Text,
                 YearLevel = cmbYearLevel.Text,
                 Birthday = dtpBirthday.Value,
                 Block = cmbBlock.Text,
@@ -94,7 +91,6 @@ namespace synapse_record_tracking_system
 
         private void LockFields()
         {
-            txtPassword.Enabled = false;
             cmbYearLevel.Enabled = false;
             cmbBlock.Enabled = false;
             txtLname.Enabled = false;
@@ -111,7 +107,6 @@ namespace synapse_record_tracking_system
             txtStudentID.Clear();
             txtFname.Clear();
             txtLname.Clear();
-            txtPassword.Clear();
             cmbYearLevel.SelectedIndex = -1;
             dtpBirthday.Value = DateTime.Today;
             cmbBlock.SelectedIndex = -1;
@@ -189,11 +184,6 @@ namespace synapse_record_tracking_system
             if (string.IsNullOrWhiteSpace(txtLname.Text))
             {
                 errorProvider1.SetError(txtLname, "Last name is required.");
-                isValid = false;
-            }
-            if (string.IsNullOrWhiteSpace(txtPassword.Text))
-            {
-                errorProvider1.SetError(txtPassword, "Password is required.");
                 isValid = false;
             }
             if (cmbYearLevel.SelectedIndex == -1)

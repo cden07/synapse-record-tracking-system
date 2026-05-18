@@ -10,43 +10,43 @@ using System.Windows.Forms;
 
 namespace synapse_record_tracking_system
 {
-    public partial class DashboardControl : UserControl
-    {
-        private string studentId;
+	public partial class DashboardControl : UserControl
+	{
+		// Constructor used by the code (pass studentId)
+		public DashboardControl(int studentId)
+		{
+			InitializeComponent();
+			LoadStudentInfo(studentId);
+		}
 
-        public DashboardControl(string studentId)
-        {
-            InitializeComponent();
-            this.studentId = studentId;
-            LoadStudentInfo(int.Parse(studentId));
-        }
+		// Optional: parameterless constructor for design-time support (does nothing)
+		public DashboardControl()
+		{
+			InitializeComponent();
+		}
 
-        public void LoadStudentInfo(int studentId)
-        {
+		public void LoadStudentInfo(int studentId)
+		{
+			var student = StudentRepository.GetStudentById(studentId);
+			if (student != null)
+			{
+				// Correct label assignments (match the names in Designer.cs)
+				lblStudentID.Text = student.StudentID.ToString();   // NOT lblID
+				lblLName.Text = student.LastName;
+				lblFName.Text = student.FirstName;
+				lblProgram.Text = student.ProgramCourse;
+				lblNumber.Text = student.ContactNumber;
+				lblBirthday.Text = student.Birthday.ToShortDateString();
+			}
+			else
+			{
+				MessageBox.Show("Student not found.");
+			}
+		}
 
+		private void DashboardControl_Load(object sender, EventArgs e)
+		{
 
-            var student = StudentRepository.GetStudentById(studentId);
-            if (student != null)
-            {
-                lblID.Text = student.StudentID.ToString();
-                lblFName.Text = student.FirstName;
-                lblLName.Text = student.LastName;
-
-                lblProgram.Text = student.ProgramCourse;
-             
-                lblNumber.Text = student.ContactNumber;
-                lblBirthday.Text = student.Birthday.ToShortDateString();
-            }
-            else
-            {
-                MessageBox.Show("Student not found.");
-            }
-        }
-        public DashboardControl()
-        {
-
-            InitializeComponent();
-
-        }
-    }
+		}
+	}
 }

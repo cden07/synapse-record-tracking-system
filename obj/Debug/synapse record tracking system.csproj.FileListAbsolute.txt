@@ -86,3 +86,58 @@ C:\Users\carla\OneDrive\Documents\C#\SynapseRecord\obj\Debug\synapse record trac
 C:\Users\carla\OneDrive\Documents\C#\SynapseRecord\obj\Debug\synapse record tracking system.csproj.CoreCompileInputs.cache
 C:\Users\carla\OneDrive\Documents\C#\SynapseRecord\obj\Debug\synapse record tracking system.exe
 C:\Users\carla\OneDrive\Documents\C#\SynapseRecord\obj\Debug\synapse record tracking system.pdb
+C:\adatabases_event\synapse-record-tracking-system\obj\Debug\synapse record tracking system.csproj.AssemblyReference.cache
+C:\adatabases_event\synapse-record-tracking-system\obj\Debug\synapse_record_tracking_system.DashboardControl.resources
+C:\adatabases_event\synapse-record-tracking-system\obj\Debug\synapse_record_tracking_system.EditStudentControl.resources
+C:\adatabases_event\synapse-record-tracking-system\obj\Debug\synapse_record_tracking_system.Form1.resources
+C:\adatabases_event\synapse-record-tracking-system\obj\Debug\synapse_record_tracking_system.Form2.resources
+C:\adatabases_event\synapse-record-tracking-system\obj\Debug\synapse_record_tracking_system.GradeManagementControl.resources
+C:\adatabases_event\synapse-record-tracking-system\obj\Debug\synapse_record_tracking_system.GradesControl.resources
+C:\adatabases_event\synapse-record-tracking-system\obj\Debug\synapse_record_tracking_system.PerformanceControl.resources
+C:\adatabases_event\synapse-record-tracking-system\obj\Debug\synapse_record_tracking_system.Properties.Resources.resources
+C:\adatabases_event\synapse-record-tracking-system\obj\Debug\synapse_record_tracking_system.StudentListControl.resources
+C:\adatabases_event\synapse-record-tracking-system\obj\Debug\synapse_record_tracking_system.StudentNavControl.resources
+C:\adatabases_event\synapse-record-tracking-system\obj\Debug\synapse_record_tracking_system.AdminNavControl.resources
+C:\adatabases_event\synapse-record-tracking-system\obj\Debug\synapse_record_tracking_system.StudentRecordControl.resources
+C:\adatabases_event\synapse-record-tracking-system\obj\Debug\synapse_record_tracking_system.AddStudentControl.resources
+C:\adatabases_event\synapse-record-tracking-system\obj\Debug\synapse_record_tracking_system.DeleteStudentControl.resources
+C:\adatabases_event\synapse-record-tracking-system\obj\Debug\synapse record tracking system.csproj.GenerateResource.cache
+C:\adatabases_event\synapse-record-tracking-system\obj\Debug\synapse record tracking system.csproj.CoreCompileInputs.cache
+C:\adatabases_event\synapse-record-tracking-system\obj\Debug\synapse record tracking system.exe
+C:\adatabases_event\synapse-record-tracking-system\obj\Debug\synapse record tracking system.pdb
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\synapse record tracking system.exe.config
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\synapse record tracking system.exe
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\synapse record tracking system.pdb
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\BouncyCastle.Cryptography.dll
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\Google.Protobuf.dll
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\K4os.Compression.LZ4.dll
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\K4os.Hash.xxHash.dll
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\MySql.Data.dll
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\System.Buffers.dll
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\System.IO.Pipelines.dll
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\System.Memory.dll
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\System.Numerics.Vectors.dll
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\ZstdSharp.dll
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\BouncyCastle.Cryptography.xml
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\Google.Protobuf.pdb
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\Google.Protobuf.xml
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\K4os.Compression.LZ4.xml
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\K4os.Hash.xxHash.xml
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\MySql.Data.xml
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\System.Buffers.xml
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\System.IO.Pipelines.xml
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\System.Memory.xml
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\System.Numerics.Vectors.xml
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\adatabases_event\synapse-record-tracking-system\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\adatabases_event\synapse-record-tracking-system\obj\Debug\synapse .4F587B1C.Up2Date
+C:\adatabases_event\synapse-record-tracking-system\obj\Debug\synapse record tracking system.csproj.SuggestedBindingRedirects.cache
+C:\adatabases_event\synapse-record-tracking-system\obj\Debug\synapse record tracking system.exe.config

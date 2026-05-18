@@ -53,7 +53,6 @@ namespace synapse_record_tracking_system
             txtStudentID.Clear();
             txtFname.Clear();
             txtLname.Clear();
-            txtPassword.Clear();
             txtContactNumber.Clear();
             cmbYearLevel.SelectedIndex = -1;
             cmbBlock.SelectedIndex = -1;
@@ -73,7 +72,6 @@ namespace synapse_record_tracking_system
                     // Fill fields with existing data
                     txtFname.Text = student.FirstName;
                     txtLname.Text = student.LastName;
-                    txtPassword.Text = student.Password;
                     cmbYearLevel.Text = student.YearLevel;
                     dtpBirthday.Value = student.Birthday;
                     cmbBlock.Text = student.Block;

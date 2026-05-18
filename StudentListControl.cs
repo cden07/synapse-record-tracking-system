@@ -20,8 +20,8 @@ namespace synapse_record_tracking_system
         private void StudentListControl_Load(object sender, EventArgs e)
         {
 
-            dgvStudents.DataSource = StudentRepository.Students;
-        }
+			dgvStudents.DataSource = StudentRepository.GetAllStudentsAsTable();
+		}
 
     }
 }
